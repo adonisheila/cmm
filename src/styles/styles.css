@@ -1,0 +1,123 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+header.navbar {
+    background-color: #fff;
+    border: 1px solid #efefef;
+}
+
+.logo {
+    margin-top: 10px;
+    width: 200px;
+}
+
+.app-title {
+    font-size: 20px;
+    color: black;
+}
+
+main {
+    position: relative;
+    padding-top: 60px;
+}
+
+/* Dashboard grid styles for Packery */
+
+.grid {
+  max-width: 1200px;
+}
+
+.grid-item { width: 50%; }
+
+.grid-item--width2 { width: 45%; height:300px; }
+
+.grid-item.is-dragging,
+.grid-item.is-positioning-post-drag {
+  background: #0F76C9;
+  z-index: 2;
+}
+
+.packery-drop-placeholder {
+  outline: 3px dashed hsla(0, 0%, 0%, 0.5);
+  outline-offset: -6px;
+  transition: transform 0.2s;
+}
+
+/* Widget Styles */
+
+.widget-container {
+    margin: 20px 0px;
+}
+
+.widget {
+    border: 1px solid #ccc;
+    height: 375px;
+    transition: transform 0.5s;
+    position: relative;
+}
+
+.widget:hover {
+    transform: scale(1.02);
+}
+
+.widget-header {
+    background-color: #ccc;
+    padding-left: 5px;
+}
+
+.widget-large-value {
+    font-size: 40px;
+}
+
+.key-value-widget-icon {
+    margin-top: 75px;
+    font-size: 100px;
+}
+
+.key-value-widget {
+    padding: 30px 10px;
+}
+
+.option-text {
+    margin-left: 5px;
+}
+
+.fade-in {
+    animation: fade-in-animation 1s ease-in;
+}
+
+@keyframes fade-in-animation {
+    from {
+        opacity: 0;
+    }
+ 
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out-animation {
+    from {
+        opacity: 1;
+    }
+ 
+    to {
+        opacity: 0;
+    }
+}
+
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+@media (min-width: 20px) and (max-width: 767px) and (orientation: portrait) {
+    .widget {
+        height: 225px;
+    }
+}
